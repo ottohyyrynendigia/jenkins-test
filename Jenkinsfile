@@ -20,8 +20,7 @@ pipeline {
                         echo 'Development selected'
 
 
-                            echo "BUILD_ENV=dev-cloud" >> build.env
-                            sh('./build_ui.sh')
+
                         
 
                         
