@@ -24,6 +24,7 @@ pipeline {
                         echo 'Development selected'
 
                         
+                        sh('./build_ui.sh')
 
                         UI_DIR = 'ui'
                     }
