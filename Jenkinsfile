@@ -35,9 +35,12 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    dir(UI_DIR) {
-                        echo "Do some UI stuff"
+                    if (UI_DIR != '') {
+                        dir(UI_DIR) {
+                            echo "Do some UI stuff"
+                        }
                     }
+                    
                 }
             }
         }
