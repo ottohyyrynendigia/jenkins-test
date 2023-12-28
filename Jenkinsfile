@@ -19,10 +19,10 @@ pipeline {
                     if (params.environment == 'Development') {
                         echo 'Development selected'
 
-                        dir ('./') { 
-                            echo "BUILD_ENV=$RELEASE" >> build.env
+                        
+                            echo "BUILD_ENV=dev-cloud" >> build.env
                             sh('./build_ui.sh')
-                        }
+                        
 
                         
                         
