@@ -21,7 +21,7 @@ pipeline {
                     if (params.environment == 'Development') {
                         echo 'Development selected'
 
-
+                        UI_DIR = 'ui'
 
                         
 
