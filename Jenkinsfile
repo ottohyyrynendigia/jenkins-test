@@ -13,7 +13,7 @@ pipeline {
     }
 
     environment {
-        UI_DIR = ''    
+        UI_DIR = ''
     }
 
     stages {
@@ -22,6 +22,8 @@ pipeline {
                 script {
                     if (params.environment == 'Development') {
                         echo 'Development selected'
+
+                        sh('./build_ui.sh')
 
                         UI_DIR = 'ui'
                     }
