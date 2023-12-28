@@ -2,6 +2,8 @@
 
 def project = 'jenkins-test'
 
+def UI_DIR = ''
+
 pipeline {
     agent any
     parameters {
