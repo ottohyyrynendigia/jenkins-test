@@ -2,8 +2,6 @@
 
 def project = 'jenkins-test'
 
-def UI_DIR = ''
-
 pipeline {
     agent any
     parameters {
@@ -14,6 +12,10 @@ pipeline {
         )
     }
 
+    environment {
+        UI_DIR = ''    
+    }
+
     stages {
         stage('Setup') {
             steps {
@@ -22,11 +24,6 @@ pipeline {
                         echo 'Development selected'
 
                         UI_DIR = 'ui'
-
-                        
-
-                        
-                        
                     }
                 }
             }
