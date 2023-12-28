@@ -23,8 +23,7 @@ pipeline {
                     if (params.environment == 'Development') {
                         echo 'Development selected'
 
-                        echo "BUILD_ENV=local" >> build.env
-                        sh('./build_ui.sh')
+                        
 
                         UI_DIR = 'ui'
                     }
