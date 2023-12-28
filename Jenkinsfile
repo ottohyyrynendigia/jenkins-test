@@ -3,6 +3,7 @@
 def project = 'jenkins-test'
 
 pipeline {
+    agent any
     parameters {
         choice(
             name: 'environment',
