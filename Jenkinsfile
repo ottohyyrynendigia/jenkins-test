@@ -18,8 +18,7 @@ pipeline {
                     if (params.environment == 'Development') {
                         echo 'Development selected'
 
-                        echo "BUILD_ENV=dev" >> build.env
-                        ./build_ui.sh
+
                     }
                 }
             }
